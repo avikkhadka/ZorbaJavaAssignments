@@ -1,19 +1,19 @@
 public class Test {
     public static void main(String[] args) {
-        int N = 121;
-        int D = 1;
-        int count = 0;
-
-        int number = N;
-
-        while (number > 0) {
-            int lastDigit = number % 10;
-            if (lastDigit == D) {
-                count++;
+        int n = 3;
+        if (n <= 1) {
+            System.out.println(n + " is not prime.");
+        } else {
+            int i;
+            for (i = 2; i < n; i++) {
+                if (n % i == 0) {
+                    System.out.println(n + " is not prime.");
+                    break;
+                }
             }
-            number = number / 10;
+            if (i == n) {
+                System.out.println(n + " is prime.");
+            }
         }
-
-        System.out.println("Digit " + D + " occurs " + count + " times in number " + N);
     }
 }
