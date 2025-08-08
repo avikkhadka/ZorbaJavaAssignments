@@ -7,6 +7,7 @@ public class ParentA {
         ChildB childBObject=new ChildB();
         ParentA parentAObject=new ParentA();
         ParentA parentAObject1=new ChildB();
+        System.out.println("*********Checking*********");
         System.out.println("Checking if parent object is an instance of child: "+(parentAObject1 instanceof ChildB));
         System.out.println("Checking if parent object is an instance of parent class: "+(parentAObject1 instanceof ParentA));
     }
